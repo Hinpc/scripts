@@ -1,4 +1,5 @@
 #!/bin/sh
+# https://github.com/Hinpc/scripts/blob/master/sync_onedrive.sh
 
 backup_file() {
     source_path=$1
