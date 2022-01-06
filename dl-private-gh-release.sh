@@ -16,7 +16,7 @@ else
     asset_id=`curl -H "Authorization: token $2" -sSL $api_url_release | jq -r ".assets[0].id"`
     echo "asset_id:" $asset_id
 
-    api_url_asset="https://api.github.com/repos/Hinpc/auto-ssl-199100xyz/releases/assets/$asset_id"
+    api_url_asset="https://api.github.com/repos/$1/releases/assets/$asset_id"
     # curl:
     # -O: Use name provided from endpoint
     # -J: "Content Disposition" header, in this case "attachment"
